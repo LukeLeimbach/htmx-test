@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.container {
+  border: 2px solid blue;
+  display: flex;
+  width: fit-content;
+}
+
+input, button {
+  border: 1px solid black;
+  margin: 5px;
+}
