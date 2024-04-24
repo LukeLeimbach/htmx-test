@@ -31,26 +31,14 @@
     <script src=https://cdn.tailwindcss.com></script>
   </head>
   <body>
-    <div class="container">
-      <form hx-get="http://localhost:5000/leimbach-htmx-lab/us-central1/test" hx-target="#userList" hx-swap="beforebegin">
-        <div>
-          <label>Name</label>
-          <input type="text" name="name" value="">
-        </div>
-        <div>
-          <label>Major</label>
-          <input type="text" name="major" value="">
-        </div>
-        <div>
-          <label>Quote</label>
-          <input type="text" name="quote" value="">
-        </div>
-        <button>Submit</button>
-      </form>
+    <div class="bg-white w-2/5 float-end">
+      <div class="mx-auto flex max-w-7x1 items-center justify-between p-6 lg:px-8">
+        <a hx-target="#main" hx-get="http://localhost:5000/leimbach-htmx-lab/us-central1/home" class="text-sm font-semibold leading-6 text-gray-900"> Home </a>
+        <a hx-target="#main" hx-get="http://localhost:5000/leimbach-htmx-lab/us-central1/about" class="text-sm font-semibold leading-6 text-gray-900"> About </a>
+        <a hx-target="#main" hx-get="http://localhost:5000/leimbach-htmx-lab/us-central1/contact" class="text-sm font-semibold leading-6 text-gray-900"> Contact </a>
+      </div>
     </div>
-    
-    <div class="users">
-      <br id="userList"/>
-    </div>
+
+    <div class="pt-20" id="main"></div>
   </body>
 </html>
